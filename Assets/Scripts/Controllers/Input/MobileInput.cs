@@ -17,8 +17,8 @@ namespace Controllers.Input
         public Action<int> OnZoom { get; set; }
         public Action<int> OnSwap { get; set; }
         public Action<Vector2> OnClick { get; set; }
-        
-        public void Init()
+
+        void IEnable.Init()
         {
             _control = new TouchControl();
             
@@ -32,8 +32,6 @@ namespace Controllers.Input
             _control.Touch.SecondTouchContact.started  += StartZoom;
             _control.Touch.SecondTouchContact.canceled += EndZoom;
 
-           
-            
         }
 
         private void StartSwap(InputAction.CallbackContext obj)
@@ -41,6 +39,32 @@ namespace Controllers.Input
             _swap = true;
             ((IInput) this).Swap();
         }
+
+        private void StartZoom(InputAction.CallbackContext obj)
+        {
+            Debug.LogError("StartZoom");
+            _zoom = true;
+            ((IInput) this).Zoom();
+        }
+
+        async void IInput.Zoom()
+        {
+            var prevDistance = 0f;
+            while (_zoom)
+            {
+                var firstVector = ReturnVector(_control.Touch.FirstTouchPosition);
+                var secondVector = ReturnVector(_control.Touch.SecondTouchPosition);
+                var distance = Vector2.Distance(firstVector, secondVector);
+                if (distance > prevDistance)
+                    OnZoom?.Invoke(-1);
+                else if (distance < prevDistance)
+                    OnZoom?.Invoke(1);
+
+                prevDistance = distance;
+                await Task.Yield();
+            }
+        }
+
 
         async void IInput.Swap()
         {
@@ -70,10 +94,11 @@ namespace Controllers.Input
             }
         }
 
-        private void EndSwap(InputAction.CallbackContext obj)
-        {
-            _swap = false;
-        }
+        private void Click(InputAction.CallbackContext callbackContext) => OnClick?.Invoke(_control.Touch.FirstTouchPosition.ReadValue<Vector2>());
+
+        private void EndSwap(InputAction.CallbackContext obj) => _swap = false;
+
+        private void EndZoom(InputAction.CallbackContext obj) => _zoom = false;
 
         void IEnable.OnDisable()
         {
@@ -82,42 +107,8 @@ namespace Controllers.Input
             _control.Touch.SecondTouchContact.started -= StartZoom; 
             _control.Touch.SecondTouchContact.canceled -= EndZoom;
             
-           // _control.Touch.Click.started -= Click;
+            // _control.Touch.Click.started -= Click;
         }
-
-        public void Click(InputAction.CallbackContext callbackContext)
-        {
-            Debug.LogError("Click");
-            OnClick?.Invoke(_control.Touch.FirstTouchPosition.ReadValue<Vector2>());
-        }
-
-        public async void Zoom()
-        {
-            var prevDistance = 0f;
-            while (_zoom)
-            {
-                var firstVector = ReturnVector(_control.Touch.FirstTouchPosition);
-                var secondVector = ReturnVector(_control.Touch.SecondTouchPosition);
-                var distance = Vector2.Distance(firstVector, secondVector);
-                if (distance > prevDistance)
-                     OnZoom?.Invoke(-1);
-                else if (distance < prevDistance)
-                    OnZoom?.Invoke(1);
-
-                prevDistance = distance;
-                await Task.Yield();
-            }
-        }
-
-
-        private void StartZoom(InputAction.CallbackContext obj)
-        {
-            Debug.LogError("StartZoom");
-            _zoom = true;
-            Zoom();
-        }
-
-        private void EndZoom(InputAction.CallbackContext obj) => _zoom = false;
 
         private Vector2 ReturnVector(InputAction action) => action.ReadValue<Vector2>();
     }

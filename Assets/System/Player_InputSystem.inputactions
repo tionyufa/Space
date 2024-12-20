@@ -9,7 +9,7 @@
                     "name": "Click",
                     "type": "Button",
                     "id": "4278baa2-0421-4015-8d3e-326c75ddc8d2",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -36,7 +36,7 @@
                     "name": "FirstTouchContact",
                     "type": "Button",
                     "id": "431c5a6d-b146-476d-8ff5-11d49725bc01",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Hold",
                     "initialStateCheck": false
@@ -56,6 +56,17 @@
                     "name": "",
                     "id": "2a9616b2-fe2a-4310-ab4c-acda22b90d54",
                     "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FirstTouchPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9e342de7-6750-4f25-9d64-e3aacad13ec1",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

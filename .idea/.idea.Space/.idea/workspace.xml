@@ -396,17 +396,42 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F7237CF7-ABEF-49BF-BB55-2D7EB076E422/ae/d6a0ec28/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Project/Space/Assets/Scripts/Controllers/ControllerCamera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://CameraController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/BaseInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Interface/IEnable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/IInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/PlayerClick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/MobileInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Fabrics/GameFabric.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AssetsLoader/IAssetsLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AssetsLoader/ResourcesLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Fabrics/IFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/PlanetsName.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Fabrics/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/DataPlanets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIDescription.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Mediators/UIMediator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/PlanetData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/SettingDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/UISettingDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/SettingsDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Mediators/VideoMediator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/MovingPlanet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Factory/IFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Factory/GameFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Mediators/GameMediator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootStrapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ControllerCamera.cs" />
       </list>
     </option>
   </component>
@@ -420,9 +445,18 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Standalone Player.Standalone Player">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Space.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Project\Space\Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -451,6 +485,9 @@
       <option name="presentableId" value="Default" />
       <updated>1734596072067</updated>
       <workItem from="1734596081172" duration="21525000" />
+      <workItem from="1734682780701" duration="136000" />
+      <workItem from="1734682927886" duration="316000" />
+      <workItem from="1734683255756" duration="18700000" />
     </task>
     <servers />
   </component>
@@ -469,18 +506,29 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1734603162365">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="836" y="298" key="RiderGenerateDialog" timestamp="1734692203300">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="836" y="298" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734692203300" />
     <state x="1114" y="401" key="RiderGenerateDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1734603162365" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1734620778694">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1734683245052">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1734683245052" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1734703029392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734703029392" />
+    <state x="707" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1734695432375">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1734695432375" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1734620778694" />
   </component>
 </project>
