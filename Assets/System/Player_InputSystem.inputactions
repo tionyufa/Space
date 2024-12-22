@@ -49,6 +49,24 @@
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "MouseScroll",
+                    "type": "Value",
+                    "id": "4d27a5e4-cb2f-44fc-a685-4ecf035d9b16",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "ca9228b7-7f7c-4bc8-a0f0-992d6d948090",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -65,7 +83,7 @@
                 },
                 {
                     "name": "",
-                    "id": "9e342de7-6750-4f25-9d64-e3aacad13ec1",
+                    "id": "2e1a76e8-7440-4992-b97b-9cc5af37efaa",
                     "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
@@ -109,6 +127,17 @@
                 },
                 {
                     "name": "",
+                    "id": "a5211d1e-0c91-4817-b194-535809539582",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FirstTouchContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c6c211e5-8b4c-4f21-979b-27119816ecf2",
                     "path": "<Touchscreen>/Press",
                     "interactions": "",
@@ -126,6 +155,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b93b69bf-e7a8-4e61-997a-d6a477935782",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseScroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7a9e795a-1d69-4140-8f5d-dea9d2803d54",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

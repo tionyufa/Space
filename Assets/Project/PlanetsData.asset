@@ -20,7 +20,7 @@ MonoBehaviour:
     speed: 0.05
     radius: 5
     color: {r: 0.4740572, g: 1, b: 0, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: e9708eb24261153478b15de4e860cfe9, type: 3}
     image: {fileID: 21300000, guid: c2cb3f1659c519e40895768b8e7d53b1, type: 3}
   - data: Venus
     isAvailable: 1
@@ -29,7 +29,7 @@ MonoBehaviour:
     speed: 0.1
     radius: 10
     color: {r: 1, g: 0.9665767, b: 0, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: e6f9f6519d7643e4ea3b27d449320e14, type: 3}
     image: {fileID: 21300000, guid: 47f61ec10422e7346859897cf1c1a11f, type: 3}
   - data: Earth
     isAvailable: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
     speed: 0.02
     radius: 22.5
     color: {r: 1, g: 0.10625489, b: 0, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: d02c15a17277a3a4ab077f64ecddd8af, type: 3}
     image: {fileID: 21300000, guid: ab605b3271b48664e91637e12f6c84f6, type: 3}
   - data: Jupiter
     isAvailable: 1
@@ -56,7 +56,7 @@ MonoBehaviour:
     speed: 0.1
     radius: 30
     color: {r: 1, g: 0, b: 0.38341904, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: caf546773370e14479e6425a726a3cba, type: 3}
     image: {fileID: 21300000, guid: 32cc4df011de4a0418ca868410121c65, type: 3}
   - data: Saturn
     isAvailable: 1
@@ -65,7 +65,7 @@ MonoBehaviour:
     speed: 0.07
     radius: 35
     color: {r: 0.8959985, g: 0, b: 1, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: b2c1d5971c4b7714a97cf15d33c4da57, type: 3}
     image: {fileID: 21300000, guid: 918115534804e9548ab3937b04c2efde, type: 3}
   - data: Uranus
     isAvailable: 1
@@ -74,7 +74,7 @@ MonoBehaviour:
     speed: 0.05
     radius: 40
     color: {r: 0.10400152, g: 0, b: 1, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: 3084a2fd809d6044f918ff0356183dcd, type: 3}
     image: {fileID: 21300000, guid: 928e13d10c5dcad47be6cd8763bffece, type: 3}
   - data: Neptune
     isAvailable: 1
@@ -83,7 +83,7 @@ MonoBehaviour:
     speed: 0.1
     radius: 45
     color: {r: 0, g: 1, b: 1, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: 57af4ac2cca3df54cbea57e18c131a6b, type: 3}
     image: {fileID: 21300000, guid: eb3ab7adcabca004d8495f07d8340ab5, type: 3}
   - data: Sun
     isAvailable: 0
@@ -92,5 +92,5 @@ MonoBehaviour:
     speed: 0.1
     radius: 45
     color: {r: 0, g: 1, b: 1, a: 1}
-    clip: {fileID: 0}
+    clip: {fileID: 32900000, guid: a87579de21fb4f54bb42606bb8110f44, type: 3}
     image: {fileID: 21300000, guid: 0a15463d53293754aa8fc4d3d8161b1c, type: 3}

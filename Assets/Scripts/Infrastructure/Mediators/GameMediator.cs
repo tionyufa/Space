@@ -1,6 +1,7 @@
 ﻿using Controllers;
 using Planets;
 using UI;
+using UnityEngine;
 using UnityEngine.Video;
 
 namespace Infrastructure.Mediators
@@ -8,11 +9,11 @@ namespace Infrastructure.Mediators
     public class GameMediator : IMediator
     {
         private readonly DataPlanets _dataPlanets;
-        private readonly ControllerCamera _controllerCamera;
+        private readonly CinemachineCameraController _controllerCamera;
         private readonly UIDescription _uiDescription;
         private readonly VideoPlayer _videoPlayer;
 
-        public GameMediator(DataPlanets data,ControllerCamera cameraController, UIDescription uiDescription,VideoPlayer videoPlayer)
+        public GameMediator(DataPlanets data,CinemachineCameraController cameraController, UIDescription uiDescription,VideoPlayer videoPlayer)
         {
             _dataPlanets = data;
             _controllerCamera = cameraController;
@@ -32,6 +33,7 @@ namespace Infrastructure.Mediators
                 {
                     _uiDescription.Construct(data);
                     _videoPlayer.clip = data.clip;
+                    Debug.Log(data.clip.name);
                 }
             }
         }

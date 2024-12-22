@@ -13,6 +13,8 @@ namespace Planets
         
         [SerializeField]
         private float _speed = 1;
+
+        private float _speedCashe;
         
         [SerializeField]
         private LineRenderer _line;
@@ -31,7 +33,6 @@ namespace Planets
             _line = line;
 
             _name = _data.name;
-            
             Init();
         }
         private void Init()
@@ -45,7 +46,10 @@ namespace Planets
         {
             _line.startColor = Color.white;
             _line.endColor = Color.white;
+            
             _speed = _data.speed;
+            _speedCashe = _speed;
+            
             _radius = _data.radius;
         }
 
@@ -85,5 +89,9 @@ namespace Planets
 
             DrawLine();
         }
+
+        public void StopSpeed() => _speed = 0;
+
+        public void ResetSpeed() => _speed = _speedCashe;
     }
 }
