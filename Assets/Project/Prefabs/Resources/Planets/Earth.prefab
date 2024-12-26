@@ -4934,10 +4934,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643521465287934}
-  - component: {fileID: 205568318585521926}
   - component: {fileID: 4878998461253096602}
   - component: {fileID: 8757770607183313976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Earth
   m_TagString: TrackingObject
   m_Icon: {fileID: 0}
@@ -4964,31 +4963,6 @@ Transform:
   - {fileID: 3325739537391510842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &205568318585521926
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733945558841920}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 4.279999
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.29735467
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23867915394586346}
-    - renderer: {fileID: 199987257424377576}
-  - screenRelativeHeight: 0.039855596
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23090388759196626}
-    - renderer: {fileID: 199987257424377576}
-  m_Enabled: 1
 --- !u!135 &4878998461253096602
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5008,7 +4982,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8757770607183313976
 MonoBehaviour:
@@ -5024,9 +4998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: 2
   _center: {fileID: 0}
-  _speed: 1
   _line: {fileID: 0}
-  _radius: 2
 --- !u!1 &1982611864615202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,6 +5192,11 @@ PrefabInstance:
       objectReference: {fileID: 7300275395849940168}
     - target: {fileID: -5835058879104713417, guid: f9a741bb8762344c6a2a9cb4217ef728,
         type: 3}
+      propertyPath: _name
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -5835058879104713417, guid: f9a741bb8762344c6a2a9cb4217ef728,
+        type: 3}
       propertyPath: _speed
       value: 1
       objectReference: {fileID: 0}
@@ -5292,6 +5269,11 @@ PrefabInstance:
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 205066459857805224, guid: f9a741bb8762344c6a2a9cb4217ef728,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

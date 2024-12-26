@@ -7,23 +7,19 @@ namespace Planets
         [SerializeField] 
         private PlanetsName _name;
         public PlanetsName namePlanet => _name;
-        
+
         [SerializeField]
         private Transform _center;
-        
-        [SerializeField]
-        private float _speed = 1;
 
-        private float _speedCashe;
-        
         [SerializeField]
         private LineRenderer _line;
-        
-        [SerializeField]
-        private float _radius = 5f;
 
         private PlanetData _data;
+        private float _speed = 1;
+        private float _speedCashe;
+        private float _radius = 5f;
         private float _angel;
+        private float _speedRotation = -5f;
         private int _segments = 100;
 
         public void Construct(PlanetData data, LineRenderer line,Transform center)
@@ -40,6 +36,8 @@ namespace Planets
             SetSetting();
             DrawLine();
             _line.loop = true;
+            _speedRotation = _data.speedRotationY;
+            _angel = Random.Range(0, 180);
         }
 
         private void SetSetting()
@@ -86,6 +84,10 @@ namespace Planets
 
             var vector = new Vector3(_center.position.x + x, _center.position.y, _center.position.z + z);
             transform.position = vector;
+
+            var euler = transform.rotation.eulerAngles;
+            euler.y += Time.deltaTime * _speedRotation;
+            transform.rotation = Quaternion.Euler(euler);
 
             DrawLine();
         }

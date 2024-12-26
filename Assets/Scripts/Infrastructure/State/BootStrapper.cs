@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Threading.Tasks;
 using Assets.Scripts.Infrastructure.AssetsLoader;
 using Assets.Scripts.Infrastructure.Fabrics;
 using Cinemachine;
@@ -11,22 +11,17 @@ using Infrastructure.State;
 using Infrastructure.State.States;
 using Planets;
 using UI;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.Video;
-using Task = System.Threading.Tasks.Task;
 
 namespace Infrastructure
 {
     public class BootStrapper : MonoBehaviour
     {
-        [SerializeField] private CinemachineCameraController _cinemachineCameraController;
         [SerializeField] 
         private DataPlanets _baseDates;
         [SerializeField] 
         private SettingsDisplay _settingsDisplay;
-        [SerializeField]
-        private CinemachineVirtualCamera _camera;
 
         [SerializeField] 
         private UIDescription _uiDescription;
@@ -36,6 +31,7 @@ namespace Infrastructure
 
         [SerializeField] private Camera _verticalCamera;
         [SerializeField] private Camera _globusCamera;
+        [SerializeField] private InterfaceAnimManager _animManager;
         
         private CinemachineCameraController _controllerCamera;
         private GameMediator _gameMediator;
@@ -43,23 +39,23 @@ namespace Infrastructure
 
         private void Awake()
         {
-            SettingsDisplay();
-            StartState();
-            
             IInput input = new MobileInput();
+            
+            SettingsDisplay((MobileInput) input);
+            StartState();
+
             IAssetsLoader assetsLoader = new ResourcesLoader();
             IFactory factory = new GameFactory(assetsLoader);
 
             CreateParents();
             var sun = CreateSun(factory);
-            CreateCamera(factory,input,sun);
-            
+            var ui = CreateUI(factory,out UIDescription description);
+            CreateCamera(factory,input,sun,ui);
+
             CreatePlanets(factory,sun);
             CreateVideoPlayer(factory);
-            
-            CreateMediators();
-            
-            _controllerCamera.Construct(input,sun);
+
+            CreateMediators(description);
         }
 
         private void StartState()
@@ -70,20 +66,35 @@ namespace Infrastructure
             state.Registration(new BlockState(), StateTriggers.Block);
         }
 
+
         private void OnDestroy() => ((IMediator) _gameMediator).UnSubscription();
         private void CreateVideoPlayer(IFactory factory) => _player = factory.CreatePlayer();
-        private void CreateMediators() => _gameMediator = new GameMediator(_baseDates,_controllerCamera,_uiDescription,_player);
+        private void CreateMediators(UIDescription uiDescription)
+        {
+            UIDescription[] descriptions = {uiDescription, _uiDescription};
+            _gameMediator = new GameMediator(_baseDates, _controllerCamera, descriptions, _player);
+        }
+
         private Transform CreateSun(IFactory factory) => factory.CreatePlanets(PlanetsName.Sun).transform;
 
+        private InterfaceAnimManager CreateUI(IFactory factory, out UIDescription uiDescription)
+        {
+            uiDescription = null;
+            var ui = factory.CreateUI(_animManager, _uiSettingDisplay.transform);
+            if (ui)
+                uiDescription = ui.GetComponent<UIDescription>();
+            return ui;
+        }
 
-        private void CreateCamera(IFactory factory, IInput input, Transform sun)
+        private void CreateCamera(IFactory factory, IInput input, Transform sun,
+            InterfaceAnimManager interfaceAnimManager)
         {
             var virtualCamera = factory.CreateCamera();
             if (virtualCamera != null)
             {
                 _controllerCamera = virtualCamera.GetComponent<CinemachineCameraController>();
                 if (_controllerCamera != null)
-                    _controllerCamera.Construct(input,sun);
+                    _controllerCamera.Construct(input,sun,_settingsDisplay,interfaceAnimManager);
                 
             }
         }
@@ -119,7 +130,7 @@ namespace Infrastructure
              
         }
 
-        private void SettingsDisplay()
+        private void SettingsDisplay(MobileInput input)
         {
             for (int i = 0; i < Display.displays.Length; i++)
             {

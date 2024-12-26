@@ -72,8 +72,7 @@ namespace Infrastructure.Factory
         }
 
 
+        InterfaceAnimManager IFactory.CreateUI(InterfaceAnimManager animManager, Transform parent) => Object.Instantiate(animManager,parent);
         GameObject InstantiateObject(GameObject gameObject) => Object.Instantiate(gameObject);
-
-
     }
 }

@@ -84,11 +84,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F7237CF7-ABEF-49BF-BB55-2D7EB076E422/bb/52962c21/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://Z:/Work/Space/Assets/Scripts/Controllers/CinemachineCameraController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Input/MobileInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2ACBECBC-299E-4654-ADC9-4DF891AF51F2/c9/9071708c/Asset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.11.2/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Input/IInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Controllers/Input/MobileInput.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -100,19 +98,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AssetsLoader/IAssetsLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AssetsLoader/ResourcesLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Fabrics/IFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/PlanetsName.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Fabrics/GameFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Planets/DataPlanets.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIDescription.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Mediators/UIMediator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/PlanetData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/SettingDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/UISettingDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/SettingsDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Mediators/VideoMediator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Factory/IFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Factory/GameFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/States.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootStrapper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/States/States.cs" />
@@ -120,16 +111,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/States/StateTriggers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/BaseState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/IStateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/GameStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/States/BlockState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/States/ViewPlanetState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/MovingPlanet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/IInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/ControllerCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/SpaceSkies Free/Demo/Scripts/LookCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/IInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/PlanetData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/PlanetsName.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Planets/MovingPlanet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/UISettingDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Setting/SettingsDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIDescription.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Excelsior/CSFHI/Scripts/InterfaceAnimManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Factory/IFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Factory/GameFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Mediators/GameMediator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/BootStrapper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Input/MobileInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/CinemachineCameraController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/State/BootStrapper.cs" />
       </list>
     </option>
   </component>
@@ -146,7 +146,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Standalone Player.Standalone Player">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Space.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -187,6 +187,10 @@
       <workItem from="1734682927886" duration="316000" />
       <workItem from="1734683255756" duration="18700000" />
       <workItem from="1734774719741" duration="23706000" />
+      <workItem from="1734876359089" duration="1739000" />
+      <workItem from="1734939771424" duration="14400000" />
+      <workItem from="1734966410754" duration="731000" />
+      <workItem from="1735208270583" duration="8231000" />
     </task>
     <servers />
   </component>
@@ -211,10 +215,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1734858465087">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1734952444055">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="836" y="298" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734692203300" />
+    <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734952444055" />
+    <state x="836" y="298" key="RiderGenerateDialog" timestamp="1734941114606">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="836" y="298" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734941114606" />
     <state x="1114" y="401" key="RiderGenerateDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1734858465087" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1734683245052">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -224,15 +232,31 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1734789192023" />
-    <state x="123" y="124" width="2315" height="1153" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1734856972623">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1734950457632">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734703029392" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734950457632" />
     <state x="123" y="124" width="2315" height="1153" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1734856972623" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1734783288503">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1734950457633">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="707" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1734695432375" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1734950457633" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1734941492092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1734941492092" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1734941492092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1734941492092" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-3" timestamp="1734941492092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1734941492092" />
+    <state x="707" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1734877359411">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1734877359411" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1734783288503" />
   </component>
 </project>

@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ec452f102d45e8939c7a77c402192c, type: 3}
   m_Name: DisplaySetting
   m_EditorClassIdentifier: 
-  verticalDisplay: 2
-  globusDisplay: 3
+  verticalDisplay: {fileID: 0}
+  globusDisplay: {fileID: 0}
+  zoomSpeed: 49.999992
+  rotationSpeed: 50.000042

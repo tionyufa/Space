@@ -15,9 +15,9 @@ namespace UI
         public void Construct(PlanetData planetData)
         {
             if (_name)
-                _name.text = planetData.name.ToString();
+                _name.text = planetData.data.ToString();
             if (_description)
-                _description.text = "Description - " + planetData.description.ToString();
+                _description.text = planetData.description.ToString();
             if (_image)
                 _image.sprite = planetData.image;
         }

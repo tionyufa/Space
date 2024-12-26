@@ -1,88 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1292139682315398
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4801891049849614}
-  - component: {fileID: 33097238618319898}
-  - component: {fileID: 23557692965381650}
-  m_Layer: 0
-  m_Name: Mercury_Lod
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4801891049849614
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292139682315398}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4620931210112870}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &33097238618319898
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292139682315398}
-  m_Mesh: {fileID: 4300000, guid: 277a4092b6ae84cc6970d7a21ac55f7f, type: 3}
---- !u!23 &23557692965381650
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292139682315398}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 4294967295
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d7a335629d5364542a8c4be1e8082b5c, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1.2
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1645654297546322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5017,10 +4934,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4620931210112870}
-  - component: {fileID: 205527854345052348}
   - component: {fileID: 2366119673273863367}
   - component: {fileID: 9066120087532202435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mercury
   m_TagString: TrackingObject
   m_Icon: {fileID: 0}
@@ -5042,34 +4958,8 @@ Transform:
   m_Children:
   - {fileID: 4567171199259086}
   - {fileID: 4140277866429110}
-  - {fileID: 4801891049849614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &205527854345052348
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856687845478954}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 4.2799997
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.146929
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23277255578292572}
-    - renderer: {fileID: 199956874217308870}
-  - screenRelativeHeight: 0.02560832
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23557692965381650}
-    - renderer: {fileID: 199956874217308870}
-  m_Enabled: 1
 --- !u!135 &2366119673273863367
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5089,7 +4979,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9066120087532202435
 MonoBehaviour:
@@ -5103,8 +4993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb01378ca6ac9794396122f7267d7ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _name: 0
   _center: {fileID: 0}
-  _speed: 1
-  _radius: 5
-  _segments: 100
   _line: {fileID: 0}

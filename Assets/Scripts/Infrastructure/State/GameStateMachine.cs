@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Infrastructure.State.States;
-using UnityEditor.VersionControl;
-using UnityEngine;
+﻿using Infrastructure.State.States;
 
 namespace Infrastructure.State
 {

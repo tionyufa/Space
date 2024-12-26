@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Infrastructure.Setting
 {
@@ -8,19 +10,34 @@ namespace Infrastructure.Setting
         public Camera verticalDisplay;
         public Camera globusDisplay;
 
+        public float zoomSpeed;
+        public float rotationSpeed;
+
+        private void Awake()
+        {
+            SetSpeedZoom(PlayerPrefs.GetFloat(nameof(zoomSpeed)));
+            SetRotationSpeed(PlayerPrefs.GetFloat(nameof(rotationSpeed)));
+        }
+
+        public void SetSpeedZoom(float speedZoom)
+        {
+            zoomSpeed = speedZoom;
+            SetPlayerPerfs(nameof(zoomSpeed),zoomSpeed);
+        }
+
+        public void SetRotationSpeed(float rotationSpeed)
+        {
+            this.rotationSpeed = rotationSpeed;
+            SetPlayerPerfs(nameof(this.rotationSpeed), rotationSpeed);
+        }
+
+        public void SetPlayerPerfs(string name,float value) => PlayerPrefs.SetFloat(name,value);
 
         public void SetDisplay(int value)
         {
-            if (value == 0)
-            {
-                verticalDisplay.targetDisplay = 1;
-                globusDisplay.targetDisplay = 2;
-            }
-            else if (value == 1)
-            {
-                verticalDisplay.targetDisplay = 2;
-                globusDisplay.targetDisplay = 1;
-            }
+            verticalDisplay.targetDisplay = value == 0 ? 1 : 2;
+            globusDisplay.targetDisplay = value == 0 ? 2 : 1;
+            
         }
     }
 }

@@ -92,10 +92,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4677324220665258}
-  - component: {fileID: 205182777401487052}
   - component: {fileID: 7568472841969023686}
   - component: {fileID: -7643684583865239193}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Saturn
   m_TagString: TrackingObject
   m_Icon: {fileID: 0}
@@ -118,36 +117,8 @@ Transform:
   - {fileID: 4277827671834268}
   - {fileID: 4930533242190828}
   - {fileID: 4466284464023632}
-  - {fileID: 4447883719993606}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &205182777401487052
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377197793697218}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0.00000047683716}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.10201206
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23349094631189316}
-    - renderer: {fileID: 199907745297058340}
-    - renderer: {fileID: 23162402637312718}
-  - screenRelativeHeight: 0.02560832
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23506883498154470}
-    - renderer: {fileID: 23162402637312718}
-    - renderer: {fileID: 199907745297058340}
-  m_Enabled: 1
 --- !u!135 &7568472841969023686
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -167,7 +138,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
+  m_Radius: 1.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-7643684583865239193
 MonoBehaviour:
@@ -181,10 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb01378ca6ac9794396122f7267d7ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _name: 0
   _center: {fileID: 0}
-  _speed: 1
-  _radius: 5
-  _segments: 100
   _line: {fileID: 0}
 --- !u!1 &1445422062220386
 GameObject:
@@ -5098,89 +5067,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1865593898569828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4447883719993606}
-  - component: {fileID: 33234295203908528}
-  - component: {fileID: 23506883498154470}
-  m_Layer: 0
-  m_Name: Saturn_Lod
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4447883719993606
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865593898569828}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4677324220665258}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &33234295203908528
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865593898569828}
-  m_Mesh: {fileID: 4300000, guid: 277a4092b6ae84cc6970d7a21ac55f7f, type: 3}
---- !u!23 &23506883498154470
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865593898569828}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 4294967295
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: b50a4cf008d5346299340465ad3583f7, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1.2
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0

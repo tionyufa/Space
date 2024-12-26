@@ -15,7 +15,8 @@ namespace Planets
 
         public float speed;
         public float radius;
-
+        public float speedRotationY;
+        
         public Color color;
 
         public VideoClip clip;

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7400510438367465617}
   - component: {fileID: 3480767731581211092}
   - component: {fileID: 9120449549984579598}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sun
   m_TagString: Actors
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -57,7 +57,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3480767731581211092
 Rigidbody:
@@ -100,9 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: 8
   _center: {fileID: 0}
-  _speed: 1
-  _radius: 5
-  _segments: 100
   _line: {fileID: 0}
 --- !u!1 &3874492676428625441
 GameObject:
@@ -121,7 +118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1812054214864011986
 Transform:
   m_ObjectHideFlags: 0
@@ -4894,7 +4891,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
